@@ -20,7 +20,8 @@ public class ejercicio5 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce the day: ");
         String dia = scanner.nextLine(); // Alternative to get 'dia' as an integer: "int dia = Integer.parseInt(scanner.nextLine());"
-
+		System.out.print("Introduce the mes: ");
+		String Mes = scanner.nextLine(); 
         // ---------- A) WITH IF-ELSE ----------
         System.out.println("===== A) if-else =====");
 
@@ -156,7 +157,34 @@ public class ejercicio5 {
 		}
 
 
+		System.out.println("===== AMPLIACIÓN =====");
+
+		switch (Mes) {
+            case "1" -> System.out.println("Enero tiene: 31");
+            case "2" -> System.out.println("febrero tiene: 28");
+			case "3" -> System.out.println("Marzo tiene: 31");
+			case "4" -> System.out.println("Abril tiene: 30");
+			case "5" -> System.out.println("Mayo tiene: 31");
+			case "6" -> {
+				System.out.println("Junio tiene: 30"); 
+				System.out.println("Mes de cumpleano");
+			}
+			case "7" -> System.out.println("julio tiene: 31");
+			default -> System.out.println("Mes no valido");
+		}
+
+ 
+        // Ampliación2: Busca la sintaxis moderna del switch con flecha (->), disponible
+        //              desde Java 14, y reescribe la parte C usando esa sintaxis.
+ 
+        // Ampliación3: Reescribe la ampliación1 utilizando el switch con flecha, de la forma más compacta posible
 
 
     }
 }
+
+
+
+
+
+        
