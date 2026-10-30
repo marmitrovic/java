@@ -102,7 +102,56 @@ System.out.println("\nTrougao:");
         }
 
         scanner.close();
+
+
+		System.out.println("TODO 10 con for bucle:");
+	for (int i = 1; i <= 30; i++)
+	{
+		if(i % 4 == 0)
+		{
+			continue;
+			
+		}else if (i == 22)
+		{
+			System.out.println("Caja cerrada en el cliente 22");
+			break;
+		}
+		System.out.println("Atendiendo al cliente " + i);
 	}
+
+	System.out.println("TODO 11 con bucle while:");
+
+	int i = 1;
+
+	while (i <= 30)
+	{
+		if(i % 4 == 0)
+		{
+			i++; // moram uvecati ovde jer continue ce vrati program opet na while uslov i napravicu beskonacnu petlju
+			continue;
+			
+		}else if (i == 22)
+		{
+			System.out.println("Caja cerrada en el cliente 22");
+			break;
+		}
+		System.out.println("Atendiendo al cliente " + i);
+		i++;
+
+	}
+
+
+
+
+
+
+
+
+
+	}
+
+
+
 }
  
  
