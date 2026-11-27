@@ -43,7 +43,7 @@ public class Hangman {
 	}
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in); //it is like malloc makes new obj and reads from stdin
+	try	(Scanner scanner = new Scanner(System.in)){ //it is like malloc makes new obj and reads from stdin
 		// new Scanner auto changing types to String int..
 		// Scanner is class new is malloc mem alocator
 		// new Scanner (buffer of 1024 char - 2048 bytes in java 1 char 2 bytes)
@@ -103,7 +103,13 @@ public class Hangman {
 				lives--;
 				System.out.println("Wrong letter!");
 
-				// Alarm! 
+				// Alarm!
+				switch (lives){
+					case 1 -> System.out.println("Careful! Last life left!");
+					case 3 -> System.out.println("Halfway through your lives!");
+					default -> { }
+				}
+				/*
 				switch (lives) {
 					case 1:
 						System.out.println("Careful! Last life left!");
@@ -114,6 +120,7 @@ public class Hangman {
 					default:
 						break;
 				}
+				*/
 			}
 		}
 
@@ -124,7 +131,7 @@ public class Hangman {
 			System.out.println("\nGame over! The word was: " + secretWord);
 		}
 
-		scanner.close(); //kao free za malloc
+		// scanner.close(); //kao free za malloc
 	}
-
+	}
 }
