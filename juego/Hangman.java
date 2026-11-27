@@ -51,7 +51,7 @@ public class Hangman {
 		System.out.println("\nPlayer 1, enter the secret word: \n");
 
 		// String secretWord = args[0].trim().toUpperCase();
-		String secretWord = scanner.nextLine().trim().toUpperCase(); // nextLine waits for Enter (better then next becuase it takes whatever) .trim() it cleans empty spaces tabs
+		String secretWord = scanner.nextLine().trim().replaceAll("[^a-zA-Z]", "").toUpperCase(); // nextLine waits for Enter (better then next becuase it takes whatever) .trim() it cleans empty spaces tabs
 		for (int i = 0; i < 40; i++) {
 			System.out.println();
 		}
