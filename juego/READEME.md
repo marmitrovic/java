@@ -1,3 +1,4 @@
+*This project has been created as part of the Java project by [mmitrovi].*
 
 # Juego del Ahorcado (Hangman) en Java
 
