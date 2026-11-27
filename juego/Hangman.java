@@ -49,6 +49,7 @@ public class Hangman {
 		System.out.println("   - START GAME -   ");
 		System.out.println("\nPlayer 1, enter the secret word: \n");
 
+		//String secretWord = args[0].trim().toUpperCase();
 		String secretWord = scanner.nextLine().trim().toUpperCase(); // nextLine waits for Enter (better then next becuase it takes whatever) .trim() it cleans empty spaces tabs
 		for (int i = 0; i < 40; i++) 
 		{
@@ -65,7 +66,7 @@ public class Hangman {
 		//need to use new str bc I dont wanna overwrite first one
 		// i couldnt use random again bc I would just get one more random number
 
-		
+			
 		/*
 		.length with and withouth () are different 
 		.length ALWAYS for arrays  forex words  - 
