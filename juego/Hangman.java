@@ -45,11 +45,13 @@ public class Hangman {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); //it is like malloc makes new obj and reads from stdin
-
+		// new Scanner auto changing types to String int..
+		// Scanner is class new is malloc mem alocator
+		 
 		System.out.println("   - START GAME -   ");
 		System.out.println("\nPlayer 1, enter the secret word: \n");
 
-		//String secretWord = args[0].trim().toUpperCase();
+		// String secretWord = args[0].trim().toUpperCase();
 		String secretWord = scanner.nextLine().trim().toUpperCase(); // nextLine waits for Enter (better then next becuase it takes whatever) .trim() it cleans empty spaces tabs
 		for (int i = 0; i < 40; i++) 
 		{
@@ -127,7 +129,7 @@ public class Hangman {
             System.out.println("\nGame over! The word was: " + secretWord);
         }
 
-        scanner.close();
+        scanner.close(); //kao free za malloc
     }
 
 }
