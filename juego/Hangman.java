@@ -47,7 +47,7 @@ public class Hangman {
         Scanner scanner = new Scanner(System.in); //it is like malloc makes new obj and reads from stdin
 		// new Scanner auto changing types to String int..
 		// Scanner is class new is malloc mem alocator
-		 
+		// new Scanner (buffer of 1024 char - 2048 bytes in java 1 char 2 bytes)
 		System.out.println("   - START GAME -   ");
 		System.out.println("\nPlayer 1, enter the secret word: \n");
 
